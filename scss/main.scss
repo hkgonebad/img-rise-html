@@ -1,0 +1,44 @@
+@import 'layout/typo';
+
+@import 'bootstrap/bootstrap';
+@import 'plugins/fontawesome/fontawesome';
+@import 'plugins/fontawesome/brands';
+@import 'plugins/fontawesome/regular';
+@import 'plugins/fontawesome/solid';
+@import 'plugins/prefixer';
+@import 'plugins/slick';
+@import 'plugins/slick-theme';
+// @import 'plugins/aos';
+// @import 'plugins/fullpage';
+@import 'plugins/animate';
+
+
+@import 'layout/normalize';
+@import 'layout/default';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/home';
+
+@import 'layout/page';
+@import 'layout/contact';
+@import 'layout/careers';
+
+@import 'layout/pages/lfw';
+@import 'layout/pages/vof';
+@import 'layout/pages/to';
+@import 'layout/pages/jw';
+
+@import 'layout/pages/os';
+@import 'layout/pages/on';
+@import 'layout/pages/rc';
+@import 'layout/pages/re';
+@import 'layout/pages/sm';
+
+@import 'layout/pages/news';
+@import 'layout/pages/tm';
+
+@import 'layout/pages/players';
+@import 'layout/pages/bm';
+@import 'layout/pages/ir';
+@import 'layout/pages/rt';

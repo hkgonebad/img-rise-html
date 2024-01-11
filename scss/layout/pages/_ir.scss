@@ -1,0 +1,112 @@
+.mainContent .heading {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0px 0;
+    height: 45px
+}
+
+@media (max-width: 767.98px) {
+    .mainContent .heading {
+        text-align:center;
+        height: auto
+    }
+}
+
+.mainContent .heading h3 {
+    font-weight: 500;
+    margin: 9px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #d2ab67;
+    display: none
+}
+
+.mainContent .heading h3 span {
+    text-transform: capitalize
+}
+
+@media (max-width: 767.98px) {
+    .mainContent .heading h3 {
+        font-size:24px
+    }
+}
+
+.mainContent .heading .breadcrumbs {
+    position: relative;
+    top: 10px;
+    font-weight: 200
+}
+
+.mainContent .heading .breadcrumbs a {
+    color: #999
+}
+
+.mainContent .heading .breadcrumbs a:after {
+    content: '|';
+    margin: 0 2px 0 8px
+}
+
+.mainContent .heading .breadcrumbs a.active {
+    color: primary;
+    font-weight: 500
+}
+
+.mainContent .heading .breadcrumbs a:last-child:after {
+    display: none
+}
+
+.mainContent .heading .breadcrumbs a:hover,.mainContent .heading .breadcrumbs a.active:hover {
+    color: #23297a
+}
+
+@media (max-width: 767.98px) {
+    .mainContent .heading .breadcrumbs {
+        position:relative;
+        right: initial;
+        top: initial;
+        padding: 10px 0
+    }
+}
+
+.mainContent .nobanner h3 {
+    display: block
+}
+
+.mainContent .nobanner h3 span {
+    text-transform: uppercase
+}
+
+.investorRelations {
+    background: #f7f7f7
+}
+
+.ourClient p {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.pdfBox {
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.pdfBox h4 {
+    color: #444;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600
+}
+
+.pdfBox p {
+    text-overflow: hidden;
+    color: #495057;
+    margin-bottom: 5px;
+    margin-top: 15px
+}
+
+.pdfBox span {
+    font-size: 14px;
+    color: #666;
+    display: block
+}

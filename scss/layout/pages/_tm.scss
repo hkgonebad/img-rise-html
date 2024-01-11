@@ -1,0 +1,128 @@
+.tmPage{
+
+    .tm1{
+
+        .imgTp{
+
+            display: none;
+
+            @include media-breakpoint-down(sm){
+                display: block;
+                padding: 30px 0 100px;
+                width: 172px;
+            }
+        }
+    }
+
+    .tmText{
+        padding: 30px 0;
+
+        @include media-breakpoint-down(sm){
+            padding: 0px 0 20px;
+        }
+
+        p{
+            color: $primary;
+            font-size: 17px;
+            text-align: center;
+            white-space: pre-line;
+
+            @include media-breakpoint-down(sm){
+                white-space: initial;
+            }
+        }
+    }
+
+    .imgBt{
+        margin-top: 30px;
+        position: absolute;
+        bottom: 0;
+
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+
+        img{
+            height: 154px;
+        }
+    }
+
+    .imgFooter{
+        position: absolute;
+        bottom: 0;
+        display: none;
+
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+
+        img{
+            height: 104px;
+        }
+    }
+
+    .tm2{
+
+        .row{
+            width: 100%;
+            align-items: center;
+        }
+
+        .container{
+            @include media-breakpoint-down(sm){
+                
+            }
+        }
+
+        .pImgM{
+            display: none;
+            @include media-breakpoint-down(sm){
+                display: block;
+            }
+        }
+        
+        .pImg{
+            padding: 30px 0;
+
+            @include media-breakpoint-down(sm){
+                display: none;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        p{
+            text-align: center;
+            white-space: pre-line;
+            color: $primary;
+        }
+
+        .form-group{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 0;
+
+            .btn{
+                color: $primary;
+                border-color: $primary;
+            }
+        }
+
+        &.bg-danger{
+            p{
+                color: #fff;
+            }
+            .form-group{
+
+                .btn{
+                    color: #fff;
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+
+    
+}

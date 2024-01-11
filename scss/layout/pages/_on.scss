@@ -1,0 +1,30 @@
+
+
+.onPage{
+
+
+
+    .footerLayer{
+        .imgBottomF{
+            position: absolute;
+            bottom: 0;
+
+            img{
+                width: 143px;
+
+                @include media-breakpoint-down(sm){
+                    width: 200px;
+                }
+            }
+        }
+
+        .container{
+
+            @include media-breakpoint-down(sm){
+                padding-bottom: 100px;
+            }
+        }
+    }
+
+    
+}

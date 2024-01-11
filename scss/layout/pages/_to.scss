@@ -1,0 +1,192 @@
+.toPage{
+
+    .to1{
+
+        .title{
+            h2{
+                @include media-breakpoint-down(sm){
+                    font-size: 40px;
+                    line-height: 1;
+                }   
+            }
+        }
+
+        .imgTo{
+
+            img{
+                width: 71px;
+            }
+        }
+
+    }
+
+    .toText{
+        padding: 30px 0;
+
+        @include media-breakpoint-down(sm){
+            padding: 30px 0 20px;
+        }
+
+        p{
+            color: $primary;
+            font-size: 17px;
+            text-align: center;
+            white-space: pre-line;
+
+            @include media-breakpoint-down(sm){
+                white-space: initial;
+            }
+        }
+    }
+
+    .imgBt{
+
+        img{
+            height: 82px;
+        }
+    }
+
+    .bgImg{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img{
+            display: none;
+        }
+
+        @include media-breakpoint-down(sm){
+            min-height: auto;
+            background-image: none !important;
+
+            img{
+                display: block;
+            }
+        }
+    }
+
+    //
+    .co{
+        background: $primary;
+        color: #fff;
+
+        .title{
+            h2{
+                color: #fff;
+            }
+        }
+
+        .coText{
+            padding: 30px 0;
+
+            @include media-breakpoint-down(sm){
+                padding: 0px 0 20px;
+            }
+
+            p{
+                font-size: 17px;
+                text-align: center;
+                white-space: pre-line;
+
+                @include media-breakpoint-down(sm){
+                    white-space: initial;
+                }
+            }
+        }
+
+        .imgBottomF{
+            position: absolute;
+            bottom: 0;
+
+            img{
+                width: 143px;
+            }
+
+            @include media-breakpoint-down(sm){
+                position: relative;
+            }
+        }
+    }
+
+    .fullVideo{
+        min-height: auto;
+
+        video{
+            width: 100%;
+        }
+    }
+
+    .footerLayer{
+        min-height: auto;
+
+        .container{
+            @include media-breakpoint-down(sm){
+                padding-top: 30px;
+                padding-bottom: 0;
+            }
+        }
+
+        p{
+            color: $primary;
+            white-space: pre-line;
+            text-align: center;
+        }
+
+        .row{
+            width: 100%;
+
+            @include media-breakpoint-down(sm){
+                flex-flow: column-reverse;
+            }
+        }
+
+        .fLeft{
+            position: relative;
+            text-align: center;
+            height: 100%;
+
+            @include media-breakpoint-down(sm){
+                padding-bottom: 120px;
+            }
+        }
+
+        .imgW{
+            padding: 10px 0;
+            display: block;
+
+            img{
+                height: 50px;
+            }
+
+            @include media-breakpoint-down(sm){
+                
+            }
+        }
+
+        .imgBottomF{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            img{
+                width: 116px;
+
+                @include media-breakpoint-down(sm){
+                    width: 200px;
+                }
+            }
+        }
+
+        .fRight{
+            
+            img{
+                width: 100%;
+            }
+
+            @include media-breakpoint-down(sm){
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

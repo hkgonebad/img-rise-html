@@ -1,0 +1,116 @@
+.rcPage{
+
+    .rc1{
+
+        .imgTp{
+
+            display: none;
+
+            @include media-breakpoint-down(sm){
+                display: block;
+                padding: 30px 0 50px;
+                width: 172px;
+            }
+        }
+    }
+
+    .rcText{
+        padding: 30px 0;
+
+        @include media-breakpoint-down(sm){
+            padding: 0px 0 10px;
+        }
+
+        p{
+            color: $primary;
+            font-size: 17px;
+            text-align: center;
+            white-space: pre-line;
+
+            @include media-breakpoint-down(sm){
+                white-space: initial;
+            }
+        }
+    }
+
+    .imgBt{
+        margin-top: 30px;
+
+        img{
+            height: 67px;
+        }
+    }
+
+    .rc2{
+        .fImg{
+            position: absolute;
+            
+            &.f3{
+                top: 20%;
+                right: -25px;
+
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+
+                img{
+                    width: 100px;
+                }
+            }
+
+            &.f4{
+                top: 20%;
+                right: 0px;
+
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+
+                img{
+                    width: 113px;
+                }
+            }
+        }
+    }
+
+    .footerLayer{
+        background: #fff;
+
+        p{
+            white-space: pre-line;
+            text-align: center;
+        }
+
+        .imgW{
+            display: none;
+
+            @include media-breakpoint-down(sm){
+                display: block;
+                padding: 30px 0 80px;
+
+                img{
+                    width: 116px;
+                }
+            }
+        }
+
+        .container{
+            @include media-breakpoint-down(sm){
+                padding-bottom: 150px;
+            }
+        }
+
+        .imgFooter{
+            position: absolute;
+            bottom: 0;
+
+            img{
+                width: 97px;
+
+                @include media-breakpoint-down(sm){
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

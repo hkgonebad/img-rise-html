@@ -1,0 +1,153 @@
+.topFooter{
+	background: $primary;
+	border-top: 2px solid #fff;
+
+	.d-flex{
+		height: 100vh;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		flex: 1;
+
+		@include media-breakpoint-down(sm) { 
+			height: auto;
+		}
+	}
+
+	h2{
+		white-space: pre-line;
+		text-align: center;
+		line-height: 60px;
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: $danger;
+		margin: 0;
+		padding: 4px 0;
+		letter-spacing: 5px;
+
+		@include media-breakpoint-down(sm) { 
+			padding: 40px 0;
+			font-size: 0.8rem;
+			letter-spacing: 3px;
+			line-height: 30px;
+		}
+	}
+}
+
+footer{
+  // border-top: 5px solid #D2AB66;
+    background: #343434;
+    // padding: 20px 40px;
+    // margin: 0px auto;
+    // color: #f7f7f7;
+    text-align:center ;
+    font-size: 14px;
+    position: relative;
+    z-index: 9;
+    
+
+	.social{
+
+		h4{
+			text-transform: uppercase;
+			color: #fff;
+			padding: 0px 0 20px;
+			font-size: 1.8rem;
+			font-weight: 600;
+			letter-spacing: 2px;
+			line-height: 40px;
+
+			@include media-breakpoint-down(sm) { 
+				font-size: 1rem;
+    			padding-bottom: 6px;
+			}
+		}
+
+		background: $danger;
+		text-align: center;
+		padding: 60px 0;
+
+		@include media-breakpoint-down(sm) { 
+			padding: 40px 0;
+		}
+
+		a{
+			font-size: 1.5rem;
+			display: inline-block;
+			color: $danger;
+			margin: 0 22px;
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+
+			i{
+				line-height: 50px;
+			}
+			
+			@include border-radius(50%);
+			background: #f7f7f7;
+
+			&:hover{
+				background: #fff;
+				color: $primary;
+			}
+
+			@include media-breakpoint-down(sm) {
+				height: 40px;
+				width: 40px;
+				line-height: 40px;
+				font-size: 1.3rem;
+				margin: 0px 8px;
+
+				i{
+					line-height: 40px;
+				}
+			}
+		}
+	}
+
+	.bFooter{
+		padding: 40px 20px;
+
+		a{
+			color: #d6d6d6;
+			text-decoration: none;
+
+			&:hover{
+				color: #fff;
+			}
+		}
+
+		p{
+			margin: 0px 0 2px;
+			font-weight: normal;
+			color: #f7f7f7;
+
+			span{
+				display: inline-block;
+			}
+
+			b{
+				font-weight: bold;
+				color: #fff;
+				display: block;
+			}
+
+			&.links{
+				margin-top: 10px;
+
+				a{
+					text-transform: uppercase;
+					color: #d6d6d6;
+					display: inline-block;
+					margin: 0 2px;
+					text-decoration: underline;
+
+					&:hover{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

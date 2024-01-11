@@ -1,0 +1,331 @@
+.playerPage{
+
+
+    .floats{
+
+        .fImg{
+            position: absolute;
+            top: 120px;
+
+            img{
+                height: 50px;
+
+                @include media-breakpoint-down(sm){
+                    height: 40px;
+                    margin-bottom: 25px;
+                }
+
+            }
+
+            &.f3{
+                left: 70%;
+
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
+            }
+
+            &.f4{
+                right: 70%;
+
+                @include media-breakpoint-down(sm){
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+
+
+    .ppText{
+        width: 100%;
+        position: relative;
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+
+        .pImg{
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            @include transform(translateY(-50%));
+
+            @include media-breakpoint-down(sm){
+                position: relative;
+                top: 0;
+                @include transform(translateY(0%));
+                margin-bottom: 30px;
+
+                &:after{
+                    content: '';
+                    height: 50%;
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    background: $primary;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+
+                img{
+                    position: relative;
+                    z-index: 5;
+                    max-width: 60%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .pTalent{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+
+            @include media-breakpoint-down(sm){
+                width: auto;
+                display: block;
+            }
+
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                li{
+                    background: $primary;
+                    color: #fff;
+                    font-size: 17px;
+                    width: 100%;
+                    padding: 10px 20px;
+
+                    &:nth-child(even){
+                        background: $danger;
+                    }
+
+                    @include media-breakpoint-down(sm){
+                        font-size: 15px;
+                        text-align: center !important;
+                        margin: 5px 0;
+
+                        &:nth-child(even){
+                            background: $danger ;
+                        }
+                    }
+                }
+
+                &.tRight{
+                    li{
+                        @include media-breakpoint-up(md){
+                            text-align: right;
+                        }
+
+                        @include media-breakpoint-down(sm){
+                            background: $danger;
+
+                            &:nth-child(even){
+                                background: $primary ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .ra1{
+        background: $danger;
+
+        .title{
+            h2{
+                font-weight: bold;
+                font-style: italic;
+
+                b{
+                    color: $danger;
+                    text-shadow: 0px 0px 3px $primary;
+                }
+
+                @include media-breakpoint-down(sm){
+                    white-space: unset;
+
+                    b:last-child{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .raList{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+
+        li{
+            background: #fff;
+            color: $primary;
+            padding: 10px 30px;
+            position: relative;
+            font-size: 17px;
+            text-transform: uppercase;
+
+            &:before{
+                content: '';
+                background-image: url('../img/svg/1-blue.svg');
+                background-size: auto;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: -8px;
+                top: 0px;
+                height: 45px;
+                width: 16px;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 100%;
+                left: -3px;
+                top: 0;
+                background: $primary;
+            }
+
+            &:nth-child(even){
+                background: $primary;
+                color: #fff;
+
+                &:before{
+                    background-image: url('../img/svg/1-white.svg');
+                }
+
+                &:after{
+                    background: #fff;
+                }
+            }
+
+            @include media-breakpoint-down(sm){
+                font-size: 14px;
+                padding: 6px 20px;
+            }
+        }
+    }
+
+    .footerLayer{
+        .container{
+            padding: 80px 0 90px;
+
+            @include media-breakpoint-down(sm){
+                padding: 40px 0 100px;
+            }
+        }
+
+        .imgBottomF{
+            position: absolute;
+            bottom: 0;
+
+            img{
+                width: 143px;
+
+                @include media-breakpoint-down(sm){
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .pQuote{
+        background: $primary;
+
+        .container{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .quote{
+            position: relative;
+
+            @include media-breakpoint-up(md){
+                position: absolute;
+                left: 0;
+                bottom: 50px;
+            }
+
+            img{
+                max-width: 300px;
+
+                @include media-breakpoint-down(sm){
+                    width: 100%;
+                    padding-top: 40px;
+                    border-top: 3px solid $danger;
+                }
+            }
+        }
+
+        .pFollow{
+            text-align: center;
+            padding-bottom: 30px;
+
+            @include media-breakpoint-up(md){
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+            }
+
+            @include media-breakpoint-down(sm){
+                padding-top: 30px;
+            }
+            
+            p{
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0;
+                font-size: 12px;
+            }
+
+            div{
+                a{
+                    font-size: 14px;
+                    display: inline-block;
+                    background: $danger;
+                    color: #fff;
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    @include border-radius(50%);
+
+                    @include media-breakpoint-down(sm){
+                        background: #fff;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md){
+            &.hp{
+                .quote{
+                    right: 0;
+                    left: initial;
+                    top: 20%;
+                }
+            }
+        }
+    }
+}
