@@ -1,77 +1,78 @@
-body{
-    font-family: 'Galano Grotesque Alt', sans-serif;
-    overflow-x: hidden;
-    overflow-y: auto;
+body {
+	font-family: 'JioType', sans-serif;
+	font-weight: normal;
+	overflow-x: hidden;
+	overflow-y: auto;
 	width: 100%;
 	height: 100%;
 }
 
-::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 10px;
 	background-color: #F5F5F5;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
 	background-color: $danger;
 }
 
-a{
-  text-decoration: none;
-  @include transition(all ease 250ms);
+a {
+	text-decoration: none;
+	@include transition(all ease 250ms);
 
-  &:hover{
-  }
+	&:hover {}
 }
 
-img{
+img {
 	@extend .img-fluid;
 }
 
-.container{
-    
-    max-width: 1245px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+
+	max-width: 1245px;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-section{
-	&.block{
+section {
+	&.block {
 		min-height: 100vh;
-		
-		@include media-breakpoint-down(md){
+
+		@include media-breakpoint-down(md) {
 			min-height: auto;
 		}
 
-		.container{
+		.container {
 			padding-top: 40px;
 			padding-bottom: 40px;
 		}
 	}
 }
 
-.main{
+.main {
 	//padding-top: 100px;
 }
-.sticky{
-	main{
+
+.sticky {
+	main {
 		//padding-top: 70px;
 	}
 }
 
 
-.cTitle{
-  	text-align: center;
-	  padding: 0 0 30px;
+.cTitle {
+	text-align: center;
+	padding: 0 0 30px;
 
-	h2{
+	h2 {
 		font-size: 87px;
 		line-height: 1;
 		color: $primary;
@@ -80,40 +81,40 @@ section{
 		margin: 0;
 		text-transform: uppercase;
 
-		span{
+		span {
 			color: #fff;
 		}
 
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md) {
 			font-size: 4rem;
 		}
 
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md) {
 			font-size: 3rem;
 		}
 	}
 }
 
-.btn{
+.btn {
 	text-transform: uppercase;
 	font-size: 17px;
 	@include border-radius(0);
 	padding-left: 25px;
 	padding-right: 25px;
 
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(sm) {
 		font-size: 12px;
 	}
 }
 
-.form-group{
-	.form-control{
+.form-group {
+	.form-control {
 		border-color: #fff;
 		@include border-radius(0);
 	}
 }
 
-.mb-line:after{
+.mb-line:after {
 	content: '';
 	background: $primary;
 	height: 1px;
@@ -123,29 +124,30 @@ section{
 	bottom: 0;
 	display: none;
 
-	@include media-breakpoint-up(md){
+	@include media-breakpoint-up(md) {
 		display: block;
 	}
+
 	// border-bottom: 1px solid $primary;
 }
 
-.mb-line-light:after{
+.mb-line-light:after {
 	background: #fff;
 }
 
-@include media-breakpoint-down(sm){
-	.pb-sm-0{
+@include media-breakpoint-down(sm) {
+	.pb-sm-0 {
 		padding-bottom: 0 !important;
 	}
 
-	.pt-sm-0{
+	.pt-sm-0 {
 		padding-top: 0 !important;
 	}
 }
 
 
 // Round Imgs
-.roundImgs{
+.roundImgs {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -154,22 +156,22 @@ section{
 	margin: 30px 0;
 	width: 90%;
 
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(sm) {
 		width: 100%;
 	}
 
-	.roundCol{
+	.roundCol {
 		flex-basis: 20%;
-    	margin: 20px 15px;
+		margin: 20px 15px;
 
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(sm) {
 			flex-basis: auto;
 		}
 	}
 
-	.imgBox{
+	.imgBox {
 		flex: 1;
-		
+
 		height: 200px;
 		width: 200px;
 		display: flex;
@@ -182,28 +184,28 @@ section{
 		background: #fff;
 		overflow: hidden;
 
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(sm) {
 			height: 120px;
 			width: 120px;
 		}
 
-		img{
+		img {
 			max-width: 150px;
-    		max-height: 150px;
+			max-height: 150px;
 			margin: 0 auto;
 			@include transition(all ease 250ms);
 			@include transform(scale(1));
 
-			@include media-breakpoint-down(sm){
+			@include media-breakpoint-down(sm) {
 				max-width: 80px;
-    			max-height: 80px;
+				max-height: 80px;
 			}
 		}
 
-		&:hover{
+		&:hover {
 			border-color: $danger;
-			
-			img{
+
+			img {
 				@include transform(scale(1.1));
 			}
 		}
