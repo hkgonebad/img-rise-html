@@ -1,145 +1,145 @@
-.careerPage{
-    
-    .fImg{
+.careerPage {
+
+    .fImg {
         position: absolute;
-        
-        &.f5{
+
+        &.f5 {
             top: 20%;
             right: -20px;
 
-            @include media-breakpoint-down(sm){
+            @include media-breakpoint-down(sm) {
                 top: 30%;
                 right: -40px;
             }
 
-            img{
+            img {
                 width: 97px;
 
-                @include media-breakpoint-down(sm){
+                @include media-breakpoint-down(sm) {
                     width: 75px;
                 }
             }
         }
 
-        &.f6{
+        &.f6 {
             left: 20px;
             top: 30%;
 
-            @include media-breakpoint-down(sm){
+            @include media-breakpoint-down(sm) {
                 left: -60px;
                 bottom: 20px;
                 top: initial;
                 display: none;
             }
 
-            img{
+            img {
                 width: 160px;
             }
         }
     }
 
-    .imgRs{
+    .imgRs {
         padding: 10px 0 30px;
 
-        img{
+        img {
             width: 127px;
         }
     }
 
-    p{
-        span{
-            @include media-breakpoint-down(sm){
+    p {
+        span {
+            @include media-breakpoint-down(sm) {
                 display: block;
             }
         }
     }
 
-    .imgBottom{
+    .imgBottom {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         text-align: center;
 
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
             // bottom: 60px;
         }
 
-        img{
+        img {
             width: 97px;
         }
     }
 
-    &.mb-cp{
+    &.mb-cp {
 
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
 
-            .container{
+            .container {
                 // padding-bottom: 180px;
             }
         }
     }
 
-    &.openings{
+    &.openings {
         min-height: auto;
         padding: 60px 0;
         position: relative;
 
-        .container{
+        .container {
             min-height: auto;
             display: block;
         }
     }
 
-    .careerForm{
+    .careerForm {
         padding: 50px 0;
         width: 100%;
 
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
             padding: 20px 0;
         }
     }
 
-    &.contactBottom{
-        @include media-breakpoint-down(sm){
+    &.contactBottom {
+        @include media-breakpoint-down(sm) {
             padding-bottom: 40px;
         }
     }
 }
 
-.openings{
+.openings {
 
-    h2{
+    h2 {
         font-weight: 300;
     }
 
-    .accordion{
+    .accordion {
 
-        .card{
+        .card {
             @include border-radius(0);
 
-            .card-header{
+            .card-header {
                 background: $primary;
                 color: #fff;
                 padding: 0px;
 
-                h2{
+                h2 {
                     font-size: 16px;
                     font-weight: 400;
                     padding: 15px;
 
-                    &:after{
+                    &:after {
                         position: absolute;
                         right: 15px;
                         top: 15px;
                         content: "\f067";
-                        font-family: 'Font Awesome 5 Free';
+                        font-family: 'Font Awesome 6 Free';
                         font-weight: 900;
                         font-size: 12px;
                     }
 
-                    &[aria-expanded="true"]{
-                        &:after{
+                    &[aria-expanded="true"] {
+                        &:after {
                             content: "\f068";
                         }
                     }
@@ -149,63 +149,61 @@
     }
 }
 
-.cList{
+.cList {
     display: flex;
     align-items: flex-start;
     color: $primary;
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
         display: block;
     }
 
-    &:not(:first-child){
+    &:not(:first-child) {
         border-top: 1px solid $primary;
         padding-top: 10px;
         margin-top: 10px;
     }
 
-    h4{
+    h4 {
         font-size: 15px;
         font-weight: bold;
         min-width: 240px;
 
-        @include media-breakpoint-down(sm){
-            
-        }
+        @include media-breakpoint-down(sm) {}
     }
 
-    .clDetails{
+    .clDetails {
         font-size: 15px;
         flex: 1;
 
-        p{
+        p {
             font-size: 15px;
 
-            @include media-breakpoint-down(sm){
+            @include media-breakpoint-down(sm) {
                 padding: 0 !important;
             }
         }
 
-        ul{
+        ul {
             margin-bottom: 10px;
 
-            @include media-breakpoint-down(sm){
+            @include media-breakpoint-down(sm) {
                 padding-left: 18px;
             }
 
-            li{
+            li {
                 font-size: 15px;
             }
         }
 
-        b{
+        b {
             font-weight: bold;
             display: block;
         }
     }
 }
 
-.fileUpload{
+.fileUpload {
     display: flex;
     align-items: center;
 
@@ -219,23 +217,23 @@
         padding: 4px 20px;
         text-transform: uppercase;
 
-        &:hover{
+        &:hover {
             color: #fff;
         }
     }
 
-    #file-chosen{
+    #file-chosen {
         margin-left: 0.2rem;
         color: #fff;
         padding: 5px 10px;
     }
 }
 
-.custom-file-input{
+.custom-file-input {
     color: #fff;
     width: 100%;
 
-    &:before{
+    &:before {
         content: 'Choose Files';
         display: inline-block;
         background: $danger;
@@ -252,8 +250,8 @@
         @extend .btn;
     }
 
-    &:hover{
-        &:before{
+    &:hover {
+        &:before {
             color: #fff;
             background: darken($danger, 10%);
         }
@@ -261,23 +259,23 @@
 }
 
 .custom-file-input::-webkit-file-upload-button {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 //@extend
-.bCareerFooter{
+.bCareerFooter {
     height: 163px;
     padding: 20px 0 0;
     position: relative;
     text-align: center;
 
-    .imgFooter{
+    .imgFooter {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
 
-        img{
+        img {
             width: 232px;
             margin: 0 auto;
         }

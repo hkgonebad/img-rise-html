@@ -83,7 +83,7 @@ $jiotype-font-path: '../fonts/jiotype/';
     url("#{$jiotype-font-path}JioType-Medium.woff2") format("woff2"),
     url("#{$jiotype-font-path}JioType-Medium.woff") format("woff"),
     url("#{$jiotype-font-path}JioType-Medium.ttf") format("truetype");
-    font-weight: norma;
+    font-weight: normal;
 }
 
 @font-face {
